@@ -1,5 +1,6 @@
 source 'https://rubygems.org'
 
+gem 'figaro'
 gem 'homesick'
 gem 'hitch'
 gem 'http'
