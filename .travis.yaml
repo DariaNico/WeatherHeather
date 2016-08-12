@@ -1,7 +1,0 @@
-language: ruby
-  rvm:
-    - 2.3.0
-
-env:
-  open_weather_map:
-    api_key: 'SUPERSECRETTOKEN'
