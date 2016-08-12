@@ -8,6 +8,7 @@ gem 'thyme'
 gem 'git'
 gem 'sqlint'
 gem 'thor'
+gem 'travis'
 
 group :test do
   gem 'rspec', '~> 3.0'
