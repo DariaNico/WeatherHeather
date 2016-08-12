@@ -2,5 +2,4 @@ language: ruby
 rvm:
   - 2.3.0
 env:
-  open_weather_map:
-    api_key: 'SUPERSECRETTOKEN'
+  - OPENWEATHERMAP_API_KEY=supersecretthing
