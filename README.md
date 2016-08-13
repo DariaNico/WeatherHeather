@@ -6,19 +6,21 @@
 ## Setup/How To
   You will need to do a few things before Heather can sucessfully help you:
 
-  1) Make sure to bundle and all that (we wouldn't want and missing gems be the cause of failure)!
+  1. Make sure to bundle and all that (we wouldn't want and missing gems be the cause of failure)!
   
-  2) Since WeatherHeather uses the OpenWeatherMap API and I'm not about to let you use my account, you will need to go to [OpenWeatherMap](http://openweathermap.org/price) and go sign up and get yourself an API key. Don't worry, there's a free option so all is well.
+  2. Since WeatherHeather uses the OpenWeatherMap API and I'm not about to let you use my account, you will need to go to [OpenWeatherMap](http://openweathermap.org/price) and go sign up and get yourself an API key. Don't worry, there's a free option so all is well.
 
-  3) Set your shiny new **API Key** as your local environment variable ```'OPENWEATHERMAP_API_TOKEN'```. [Here are some ways to do it](http://railsapps.github.io/rails-environment-variables.html). And [here is more info on ENV variables](http://blog.honeybadger.io/ruby-guide-environment-variables/).
+  3. Set your shiny new **API Key** as your local environment variable ```'OPENWEATHERMAP_API_TOKEN'```. [Here are some ways to do it](http://railsapps.github.io/rails-environment-variables.html). And [here is more info on ENV variables](http://blog.honeybadger.io/ruby-guide-environment-variables/).
     
-    a) Use [Figaro](https://github.com/laserlemon/figaro). 
-      * Run ```$ bundle exec figaro install```, which will create a commented ```config/application.yml``` and add it to your ```.gitignore```
-      * Add ```OPENWEATHERMAP_API_TOKEN: "API Key here"``` to ```confic/application.ym;```. This will add it to your local ENV variables for Heather to access.
+    * Use [Figaro](https://github.com/laserlemon/figaro). 
+      * Run ```'$ bundle exec figaro install'```, which will create a commented ```config/application.yml``` and add it to your ```.gitignore```
+      * Add ```'OPENWEATHERMAP_API_TOKEN: "API Key here"'``` to ```config/application.yml```. This will add it to your local ENV variables for Heather to access.
     
-    b) In your terminal, run ```export OPENWEATHERMAP_API_TOKEN="API Key here"``` to set it for the current window.
+    * In your terminal, run the following to set it for your current session.
+      * ```export OPENWEATHERMAP_API_TOKEN="API Key here"```
 
-  4) Heather is now ready to help you! Run the program ```weather_heather.rb``` to get your weather information. (NOTE: If you're running from a shell, remember to make the ```weather_heather.rb``` and executeable with chmod!)
+
+  4. Heather is now ready to help you! Run the program ```weather_heather.rb``` to get your weather information. (NOTE: If you're running from a shell, remember to make the ```weather_heather.rb``` and executeable with chmod!)
 
 ## Warnings and Shinanigans
   Heather is not the brightest and is limited to what her friend's (OpenWeatherMap) query abilities are and their database completeness. As such, you might not get the correct city's weather or you might get a very unexpected answer if you're imputting mischevious locations! You have been warned.
